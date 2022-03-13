@@ -1,15 +1,27 @@
 
-    <div class="search-box">
+    <div
+    id="container-form">
+
     <form
-    class="searchArtist" 
+    id="form"
     action="/artist-search"
-    method="GET"
+    method="get"
     enctype="application/JSON">
+
     <label 
-    for="artist-name"> Name of Artists'</label>
-    <input type="text"
+    for="artist-name">
+    </label>
+
+    <input
+    type="text"
     name="artist"
-    placeholder= "Search for an artist">
-    <button type="submit">Search for an artist</button>
+    placeholder= "Search for an artist"
+    >
+
+    <button
+    class="search-button"
+    type="submit">Search for an artist
+    </button>
     </form>
+
     </div>
