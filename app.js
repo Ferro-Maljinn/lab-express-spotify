@@ -8,7 +8,7 @@ const SpotifyWebApi = require("spotify-web-api-node");
 const serverMethods = require("spotify-web-api-node/src/server-methods");
 
 const app = express();
-const PORT = process.env.PORT || 3000
+/* const PORT = process.env.PORT || 3000 */
 
 app.set("view engine", "hbs");
 app.set("views", __dirname + "/views");
@@ -115,6 +115,6 @@ app.get("/albums/tracks/:albumId", (req, res) => {
   });
 });
 
-app.listen(PORT, () =>
+app.listen(process.env.PORT, () =>
   console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊")
 );
